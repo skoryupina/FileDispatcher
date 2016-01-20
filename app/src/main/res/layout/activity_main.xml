@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:background="@color/background_material_dark">
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/addfile"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="false"
+            android:src="@android:drawable/ic_input_add"
+            android:layout_alignParentStart="false"
+            android:background="@color/background_material_dark"
+            android:clickable="true"
+            android:onClick="addfile"/>
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/sendsms"
+            android:src="@android:drawable/ic_dialog_email"
+            android:background="@color/background_material_dark"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>-->
+
+    <ListView
+        android:id="@+id/lvSchedulerItems"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#001388"
+        android:dividerHeight="1dp">
+    </ListView>
+</RelativeLayout>

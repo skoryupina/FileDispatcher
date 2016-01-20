@@ -1,0 +1,31 @@
+<resources>
+    <!--App contact-->
+    <string name="app_name"> 4:Parcels</string>
+
+    <!--ActionBar button-->
+    <string name="action_help">Help</string>
+    <string name="action_send">Send</string>
+    <string name="action_add">Add</string>
+
+    <!--About dialog-->
+    <string name="about_toast">
+        Laboratory work #2\n
+        Author: Ekaterina Skoryupina\n
+        Group: 622M\n
+        University: SSAU\n
+    </string>
+
+    <!--Exit dialog-->
+    <string name="exit_confirmation">Exit confirmation</string>
+    <string name="exit_question">Are you sure you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+    <!--Err Messages-->
+    <string name="jsonErr">"You're not properly process JSON-objects"</string>
+    <string name="fileErr">"You're not properly process Internal File"</string>
+    <string name="contact_in_scheduler_layout">\t\t\tContact</string>
+    <string name="file_in_scheduler_layout">\t\t\tFile</string>
+
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="#ffebeff1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_scheduler_shareview"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#FFAA55"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/sendsms" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/item_scheduler_deleteview"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#757770"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:src="@android:drawable/ic_menu_delete"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#E3F7F7"
+
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:weightSum="1"
+        android:id="@+id/item_scheduler_mainview"
+       >
+
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_in_scheduler_layout"
+            android:textColor="#001388"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/file_in_scheduler_layout"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+</RelativeLayout>
+

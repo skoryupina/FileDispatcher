@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <!-- Add new scheduler item, should appear as action button -->
+    <item android:id="@+id/action_add"
+        android:icon="@drawable/addfile"
+        android:title="@string/action_add"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+
+    <!-- Send sms scheduler item, should appear as action button -->
+ <!--   <item android:id="@+id/action_send"
+        android:icon="@drawable/sendsms"
+        android:title="@string/action_send"
+        android:orderInCategory="2"
+        app:showAsAction="always" />-->
+
+    <!-- Help, should appear as action button -->
+    <item android:id="@+id/action_help"
+        android:icon="@drawable/about"
+        android:title="@string/action_help"
+        android:orderInCategory="3"
+        app:showAsAction="always" />
+
+
+</menu>
+    <!--  xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity"-->

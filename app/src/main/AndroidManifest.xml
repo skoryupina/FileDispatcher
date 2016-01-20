@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.skoryupina.filedispatcher" >
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission  android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:configChanges="orientation|screenSize">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            >
+            <!-- filter for launching app -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- filter for sending files; accepts SEND action with URI of file -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" /> <!--Для получения неявных объектов Intent -->
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+
+
+        </activity>
+    </application>
+
+
+</manifest>
